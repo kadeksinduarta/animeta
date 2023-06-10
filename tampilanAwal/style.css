@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Kdam+Thmor+Pro&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  height: 110%;
+  padding: 10px 5%;
+  background-color: #0b0b2d;
+}
+
+.container h1 {
+  color: red;
+  font-size: 30px;
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.container nav {
+  background-color: rgb(36, 35, 35);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  width: 100%;
+  height: 60px;
+  padding: 0 20px;
+}
+
+.container nav .link li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.container nav .link .home {
+  background-color: rgb(193, 0, 0);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.container nav .link .home:hover {
+  background-color: rgb(128, 7, 7);
+  color: white;
+}
+
+.container nav .link li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container nav .link li a:hover {
+  color: gray;
+}
+
+.container nav .gambar li {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+.container nav .gambar li img {
+  width: 20px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.container nav .gambar li img:hover {
+  transform: scale(0.95);
+}
+
+.halaman-utama .img {
+  width: 100%;
+  height: 400px;
+  margin-top: 20px;
+  background-color: aqua;
+  background-image: url("../gambar/bgUtama.png");
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.halaman-utama .img h1 {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  bottom: 160px;
+  padding-left: 20px;
+  font-family: sans-serif;
+}
+.halaman-utama .img p {
+  color: white;
+  position: absolute;
+  bottom: 140px;
+  font-size: 12px;
+  padding-left: 20px;
+  font-family: sans-serif;
+}
+.halaman-utama .img a {
+  color: white;
+  position: absolute;
+  bottom: 80px;
+  font-size: 15px;
+  margin-left: 20px;
+  padding: 10px 20px;
+  background-color: rgb(193, 0, 0);
+  font-family: sans-serif;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+
+.halaman-utama .img a:hover {
+  background-color: transparent;
+  border: 1px solid red;
+}
+
+.halaman-kedua-full .judul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin-top: 30px;
+}
+
+.halaman-kedua-full .judul h1 {
+  font-size: 17px;
+  border-left: 3px solid red;
+  padding-left: 10px;
+  cursor: pointer;
+  color: #fff;
+  margin-right: 20px;
+}
+
+.halaman-kedua-full .judul h1:hover {
+  color: grey;
+}
+
+.halaman-kedua-full .judul .h1 {
+  display: flex;
+}
+
+.halaman-kedua-full .judul ul li {
+  display: inline-block;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.halaman-kedua-full .judul ul li:hover {
+  color: grey;
+}
+
+.halaman-kedua-full .halaman-kedua {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.halaman-kedua-full .sampul {
+  width: 184px;
+  height: 350px;
+  margin-top: 20px;
+  font-family: sans-serif;
+  color: white;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 5px;
+  border-radius: 10px;
+  transition: all 0.2s;
+  background-color: rgb(16, 18, 18);
+}
+.halaman-kedua-full .sampul:hover {
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px 1px rgb(193, 0, 0);
+  transform: scale(0.98);
+}
+
+.halaman-kedua-full .sampul .sampul-gambar img {
+  width: 170px;
+}
+
+.sampul .sampul-tulisan p:nth-child(1) {
+  font-size: 18px;
+  color: rgb(208, 207, 207);
+}
+
+.halaman-kedua-full .sampul .sampul-tulisan p:nth-child(2) {
+  font-size: 13px;
+  color: brown;
+}
+
+.halaman-kedua-full .sampul .sampul-tulisan ul li {
+  display: inline-block;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.halaman-kedua-full .sampul .sampul-tulisan ul li img {
+  width: 16px;
+}
+
+/* responsive */
+@media (width: 500px) {
+  .container nav ul {
+    display: none;
+  }
+}
